@@ -15,7 +15,7 @@ export const Welcome: React.FC = () => (
         ReactJs
       </a>
       . This UI can be used to implement the interface as a functional prototype
-      that can later be integrated with the backend LLM.
+      that can later be integrated with the backend LLM of user choice.
     </p>
   </div>
 );

@@ -4,7 +4,7 @@ import { useChat } from "../hooks/use-chat";
 import { ChatMessage } from "../components/ChatMessage";
 import { appConfig } from "../../config.browser";
 import { Welcome } from "../components/Welcome";
-
+import { Source } from "../components/Source";
 export default function Index() {
   // The content of the box where the user is typing
   const [message, setMessage] = useState<string>("");
@@ -43,13 +43,14 @@ export default function Index() {
   }, [state]);
 
   return (
-    <App title="LFX Chat UI">
+    <App title="Hyperledger AI-FAQ ChatUI LFX project demonstration">
       <main className="bg-white md:rounded-lg md:shadow-md p-6 w-full h-full flex flex-col">
         <section className="overflow-y-auto flex-grow mb-4 pb-8">
           <div className="flex flex-col space-y-4">
             {chatHistory.length === 0 ? (
               <>
                 <Welcome />
+                <Source />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {appConfig.samplePhrases.map((phrase) => (
                     <button
@@ -63,7 +64,7 @@ export default function Index() {
                 </div>
                 <div className="flex justify-center">
                   <p className="text-sm text-gray-500 mt-5">
-                    Built with 🤖{" "}
+                    🤖{" "}
                     <a
                       className="underline"
                       href="https://github.com/pranjal7852"

@@ -15,7 +15,10 @@ export const App: React.FC<React.PropsWithChildren<AppProps>> = ({
       <Head>
         <title>{title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="LFX project demonstration" />
+        <meta
+          name="description"
+          content="Hyperledger AI-FAQ ChatUI LFX project demonstration"
+        />
       </Head>
       {children}
     </>
